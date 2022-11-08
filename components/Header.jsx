@@ -1,6 +1,7 @@
 import { ConnectButton } from "web3uikit"
 import Link from "next/link"
 import Image from "next/image"
+import ScrollToTop from "./ScrollToTop"
 
 export default function Header() {
     return (
@@ -40,6 +41,7 @@ export default function Header() {
             <div className="hidden lg:block mr-3">
                 <ConnectButton moralisAuth={false} />
             </div>
+            <ScrollToTop />
         </nav>
     )
 }

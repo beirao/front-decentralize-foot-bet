@@ -21,7 +21,7 @@ export default function Home({ dataActiveBet, dataProcessingBet, dataEndedBet })
     return (
         <div className="min-h-screen mx-10 mt-4 mb-20 ">
             <TabList defaultActiveKey={1} tabStyle="bar">
-                <Tab tabKey={1} tabName="Active Bets">
+                <Tab tabKey={1} tabName="Active">
                     <div className="flex flex-wrap justify-evenly">
                         {dataActiveBet.map((match, index) => {
                             const {
@@ -51,7 +51,7 @@ export default function Home({ dataActiveBet, dataProcessingBet, dataEndedBet })
                         })}
                     </div>
                 </Tab>
-                <Tab tabKey={2} tabName="Processing Bets">
+                <Tab tabKey={2} tabName="Processing">
                     <div className="flex flex-wrap justify-evenly">
                         {dataProcessingBet.map((match, index) => {
                             const {
@@ -81,7 +81,7 @@ export default function Home({ dataActiveBet, dataProcessingBet, dataEndedBet })
                         })}
                     </div>
                 </Tab>
-                <Tab tabKey={3} tabName="Ended Bets">
+                <Tab tabKey={3} tabName="Ended">
                     <div className="flex flex-wrap  justify-evenly">
                         {dataEndedBet.map((match, index) => {
                             const {
